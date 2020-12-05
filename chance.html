@@ -126,7 +126,7 @@ try {
  s=+selected.value;
  selected=document.querySelector('.yes-six:checked')
  d=selected.value;
- if((q<0)||(t<0)||(y<0)||(u<0)||(o<0)) {
+ if((q<1)||(t<0)||(y<0)||(u<0)||(o<0)) {
      throw new SyntaxError("Данные не коректны");
     }
   if (x=='false') {
@@ -170,7 +170,7 @@ try {
    return;
   }
 }catch(err) {
- alert(`возникла ошибка: ${err.message}`)
+ alert(`проверьте правильность и полноту введённых данных`)
 }}
 </script>
 </body>
