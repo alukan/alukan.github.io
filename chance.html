@@ -126,6 +126,9 @@ try {
  s=+selected.value;
  selected=document.querySelector('.yes-six:checked')
  d=selected.value;
+ if((q<0)||(t<0)||(y<0)||(u<0)||(o<0)) {
+     throw new SyntaxError("Данные не коректны");
+    }
   if (x=='false') {
     if (z=='true') {
      alert('99%');
