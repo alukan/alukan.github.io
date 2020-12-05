@@ -223,9 +223,15 @@ footer {
     .hands {
      width:450px;
     }
-    .recomend {
+    .sec {
      margin-left:55vw;
     }
+    .first{
+        margin-left:5vw;
+    }
+    .virus-text{
+        margin-left:5vw
+       } 
     .rec-text {
      margin-left:5vw;
     }
@@ -233,3 +239,25 @@ footer {
      margin-left:60vw;
     }
 }
+@media(max-width: 1200px) {
+    .virus-text{
+     margin-left:5vw
+    } 
+    .distance{
+        margin-left:50vw;
+        width:45vw;
+    }
+    .recomend{
+      font-size:16px;
+    }
+    .sec{
+        margin-top:45vw;
+    }
+    .live{
+        width:35vw;
+        margin-left:60vw;
+    }
+    .hands{
+        width:40vw;
+    }
+}    
