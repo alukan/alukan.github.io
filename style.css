@@ -274,10 +274,16 @@ a {
     }
     .sick-graph{
         width:50vw;
-        margin-left: 45vw;
+        margin-left: 47vw;
     }
     .recovered-graph{
      width:50vw;
-     margin-left: 45vw;
+     margin-left: 47vw;
+    }
+    .sick-text{
+     margin-left:1vw;
+    }
+    .recovered-text{
+     margin-left: 1vw;
     }
 }
