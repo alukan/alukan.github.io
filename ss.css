@@ -244,20 +244,23 @@ footer {
      margin-left:5vw
     } 
     .distance{
-        margin-left:50vw;
-        width:45vw;
+     margin-left:52vw;
+     width:45vw;
     }
     .recomend{
-      font-size:16px;
+     font-size:16px;
     }
     .sec{
-        margin-top:45vw;
+     margin-top:45vw;
     }
     .live{
-        width:35vw;
-        margin-left:60vw;
+     width:35vw;
+     margin-left:60vw;
     }
     .hands{
         width:40vw;
+    }
+    .main-rec{
+     font-size:16px;
     }
 }    
