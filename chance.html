@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="ss-chance.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+        <a href="main.html" class="statistics">Статистика</a>
+        <a href="recomendations.html" class="rec">Рекомендации</a>
+        <p class="chance">Шанс заражения</p>
+        <hr>
+        <h1>СТЕПЕНЬ ОПАСНОСТИ<BR>
+          COVID-19 ИМЕННО ДЛЯ ВАС</h1>
+             <p class="head-subtitle">
+            Каждый хотел бы знать насколько опасен коронавирус лично для него.<br>
+            Именно это мы предлагаем вам узнать ответив на совсем немного вопросов.
+            </p>
+     </header>
+     <div class="calc">
+             <div class="first-block">
+            <h2 >Сколько людей проживает в вашем городе?</h2>
+            <input type="number" class="text-inp first-inp">
+             </div>
+            <div class='first-block'>
+              <h2>Сколько времени в день вы проводите<br> 
+                в общественных местах?</h2>
+              <input type="radio" class="yes-inp four-inp" name="time" value='0'>меньше 1 часа<br>
+              <input type="radio" class="yes-inp four-inp" name="time" value='10'>1-4 часа<br>
+              <input type="radio" class="yes-inp four-inp" name="time" value='20'>больше 4 часов<br>
+              </div>
+                <div class="first-block">
+                    <h2>Имеются ли у вас симтомы такие как<br>
+                         кашель, насморк и т.д.?</h2>
+                    <input type="radio" class="yes-inp yes-first" name="simptom" value='true'>да
+                    <input type="radio" class="yes-inp yes-first" name="simptom" value='false'>нет<br>
+                    </div>
+                    <div class="first-block">
+                    <h2 >Чувствуете ли вы запахи?</h2>
+                    <input type="radio" class="yes-inp yes-sec" name="feel" value='true'>да
+                    <input type="radio" class="yes-inp yes-sec" name="feel"  value='false'>нет<br>
+                    </div>
+                    <div class="first-block">
+                        <h2 >Болели ли вы covid-19?</h2>
+                        <input type="radio" class="yes-inp yes-thir" name="was" value="true">да
+                        <input type="radio" class="yes-inp yes-thir" name="was" value='false'>нет<br>
+                        </div>  
+                        <div class="block">
+                          <h2 >Сколько из этих рекомендаций вы соблюдаете?<br>
+                          Мыть руки, Держать дистанцию 1.5 метра, Носить маску.
+                          </h2>
+                          <input type="radio" class="yes-inp yes-four" name="recomend" value="0">0
+                          <input type="radio" class="yes-inp yes-four" name="recomend" value="1">1
+                          <input type="radio" class="yes-inp yes-four" name="recomend" value="2"> 2
+                          <input type="radio" class="yes-inp yes-four" name="recomend" value="3">3<br>
+                          </div>
+                </div>
+        <div class="calc-sec">
+
+        <div class="block"> 
+        <h2 >Как давно болели люди живущие с вами?</h2>
+        <input type="radio" class="yes-inp yes-fifth" name="with" value='0'>никогда или больше 21 дня назад<br>
+        <input type="radio" class="yes-inp yes-fifth" name="with" value='10'> от 10 до 21 дня назад<br>
+        <input type="radio" class="yes-inp yes-fifth" name="with" value='20'>от 3 до 10 дней назад<br>
+        <input type="radio" class="yes-inp yes-fifth" name="with" value='30'>сейчас или меньше 3дней назад<br>
+        </div>
+
+        <div class="block"> 
+        <h2>Сколько у вас контактов в день?</h2>
+        <input type="radio" class="yes-inp yes-six" name="contact" value='0.7'>0-10<br>
+        <input type="radio" class="yes-inp yes-six" name="contact" value='1'>11-20<br>
+        <input type="radio" class="yes-inp yes-six" name="contact" value='1.3'>20-50<br>
+        <input type="radio" class="yes-inp yes-six" name="contact" value='2'>50+<br>
+        </div>
+
+        <div class="block"> 
+        <h2>Сколько у вас контактов 1 и 2 уровней которые болели:</h2>
+        <h2 class="help">Сейчас или меньше 7 дней назад</h2><input type="text" class="text-inp fifth-inp">
+        <h2 class="help">7-14 дней назад</h2><input type="number" class="text-inp six-inp">
+        <h2 class="help">14-21 дней назад</h2><input type="number" class="text-inp seven-inp">
+        <h2 class="help">больше 21 дня назад</h2><input type="number" class="text-inp eight-inp">
+        </div>
+    </div>  
+    <button class="cal">ПОДСЧИТАТЬ  </button>
+
+      <footer>
+      
+      </footer>
+
+    <script>
+let q; let r; let t;
+ let y; let u; let o;
+let firstInp = document.querySelector('.first-inp');
+let fifthInp = document.querySelector('.fifth-inp');
+let sixInp = document.querySelector('.six-inp');
+let sevenInp = document.querySelector('.seven-inp');
+let eightInp = document.querySelector('.eight-inp');
+let z;let x;let c;
+let a;let s;let d;
+let p=0;
+document.querySelector('.cal').onclick=function (){
+try {
+ q = +firstInp.value;
+
+ selected=document.querySelector('.four-inp:checked')
+ r=+selected.value;
+ t = +fifthInp.value;
+ t=t*5;
+ y = +sixInp.value;
+ y=y*3;
+ u = +sevenInp.value;
+ o = +eightInp.value;
+ o=o*0.2;
+ selected=document.querySelector('.yes-first:checked');
+ z=selected.value;
+ selected=document.querySelector('.yes-sec:checked');
+ x=selected.value;
+ selected=document.querySelector('.yes-thir:checked');
+ c=selected.value;
+ selected=document.querySelector('.yes-four:checked')
+ a=selected.value;
+ a=3-a;
+ a=9*a;
+ a=a/3;
+ selected=document.querySelector('.yes-fifth:checked')
+ s=+selected.value;
+ selected=document.querySelector('.yes-six:checked')
+ d=selected.value;
+  if (x=='false') {
+    if (z=='true') {
+     alert('99%');
+     return
+    } else {
+       alert('90%');
+       return
+      }
+  }else{
+    if(z=='true') {
+     p=10;
+    }else{
+     p=-10;
+    }
+   p=p+r;
+   p=p+s;
+   p=p*d; 
+   p=p+t+y+u+o;
+   p=p+a;
+   if(c=='true') {
+     p=p-25;
+    }
+    if(q<10000) {
+     p=p-10;
+    }else if (q>100000) {
+     p=p+10;
+    }
+    if(p/p!=1) {
+     throw new SyntaxError("Данные не полны");
+    }
+    if(p<1) {
+     p=1
+    }
+    if(p>99) {
+      p=99
+    }
+    p=Math.round(p);
+   alert(p+'%');
+   return;
+  }
+}catch(err) {
+ alert(`возникла ошибка: ${err.message}`)
+}}
+</script>
+</body>
+</html>

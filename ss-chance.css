@@ -1,0 +1,186 @@
+* {
+ margin:0;
+ padding:0;
+}
+ body { 
+ min-width: 960px;
+ margin: auto;
+ max-width:1400px;
+ background-image: url(background28.jpg);
+}
+ header {
+ height: 600px;
+ background-image: url(background-head.jpg);
+}
+.statistics {
+ position: static;
+ width: 38px;
+ height: 20px;
+ color:white;
+ font-family:arial;
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 140%;
+ margin-left:550px;
+ margin-top: 20px;;
+ float: left;
+ display: block;
+}
+.rec {
+ margin-top:20px;
+ margin-left:100px;
+ position: static;
+ font-family: arial;
+ font-size: 14px;
+ line-height: 140%;
+ color:white;
+ float: left;
+ display: block;
+}
+.chance {
+ margin-top:20px;
+ margin-left:60px;
+ position: static;
+ font-family: arial;
+ font-size: 14px;
+ line-height: 140%;
+ color:white;
+ float: left;
+ display: block;
+}
+
+hr {
+ position: absolute;
+ border:none;
+ height: 3px;
+ width:108px;
+ margin-left: 844px;
+ margin-top:36px;
+ background: rgb(223, 86, 188);  
+ flex: none;
+ order: 1;
+ align-self: stretch;
+ flex-grow: 0;
+}
+H1 {
+ position: absolute;
+ COLOR:white;
+ font-size: 40px;
+ margin-top: 200px;
+ margin-left: 475px;;
+ text-align: center;
+}
+.head-subtitle { 
+ position: absolute;
+ font-family: arial;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 14px;
+ line-height: 140%;
+ margin-top:300px;
+ margin-left:525px;
+ color:white;
+}
+
+
+
+.calc {
+ height:1500px;
+ width:700px;
+ float: left;
+ display: block;
+}
+.calc-sec {
+ height:1550px;
+ width:700px;
+ float: left;
+ display: block;
+}
+h2 {
+ position: relative;
+ font-family: arial;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 24px;
+ line-height: 28px;
+ color: #373737;
+}
+.block {
+ margin-top:100px;
+ margin-left:150px;
+}
+.first-block {
+ margin-top:135px;
+ margin-left:150px;
+}
+.text-inp { 
+ width:200px;
+ line-height: 43px;
+ margin-top:20px;
+}
+.yes-inp { 
+ width:50px;
+ line-height: 46px;
+ margin-top:20px;
+}
+.help {
+ margin-top:30px;
+}
+button {
+ line-height: 46px;
+ height: 46px;
+ width:66px;
+ border: 0px;
+ line-height:46px;
+ background-color: deepskyblue;
+}
+
+.cal {
+ margin-left: 600px;
+ margin-top:100px;
+ border: 0px;
+ color:white;
+ width:220px;
+ font-size: 20PX;
+ line-height:46px;
+ background-color: deepskyblue;
+}
+
+footer {
+ margin-top:200px;
+ height: 200px;
+ background-image: url(footer.jpg);
+}
+@media(max-width:1300px) {
+    .statistics { 
+     position:absolute;
+     margin-left: 35vw;
+    }
+    .rec {
+     margin-left:46vw;
+     position: absolute;
+    }
+    .chance {
+     position: absolute;
+     margin-left:60vw;
+    }
+    hr { 
+        
+     margin-left: 60vw;
+    }
+    h1 {
+     margin-left: 30vw;;
+    }
+    .head-subtitle {
+      margin-left: 35vw;;
+    }
+    .cal {
+     margin-left: 15vw;
+    }
+    .calc {
+     width:100%;
+    }
+    .calc-sec {
+     width:100%;
+    }
+}
