@@ -267,3 +267,17 @@ a {
      margin-left:20vw;
     }
 }
+@media(max-width: 1200px) {
+    .map-graph{
+     width:98vw;
+     margin-left: 0vw;
+    }
+    .sick-graph{
+        width:50vw;
+        margin-left: 45vw;
+    }
+    .recovered-graph{
+     width:50vw;
+     margin-left: 45vw;
+    }
+}
