@@ -244,14 +244,18 @@ footer {
      margin-left:5vw
     } 
     .distance{
-     margin-left:52vw;
-     width:45vw;
+     margin-left:54vw;
+     width:43vw;
     }
     .recomend{
      font-size:16px;
     }
     .sec{
      margin-top:45vw;
+     margin-left:50vw;
+    }
+    .wash-text{
+     margin-left:50vw;  
     }
     .live{
      width:35vw;
